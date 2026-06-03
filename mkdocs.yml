@@ -1,0 +1,23 @@
+site_name: "건물 공사업자 매뉴얼"
+docs_dir: "." # 현재 폴더를 문서 루트로 사용
+site_author: "건물관리자"
+theme:
+  name: "mkdocs"
+nav:
+  - 홈: index.md
+  - 퀵스타트: quickstart.md
+  - 목차:
+    - 공사 신청: topics/application.md
+    - 출입 절차: topics/access-control.md
+    - 주차 규정: topics/parking.md
+    - 화물승강기 이용: topics/freight-elevator.md
+    - 보양 규정: topics/protection-work.md
+    - 안전관리: topics/safety.md
+    - 시설물 이용: topics/facility-usage.md
+    - 원상복구: topics/restoration.md
+    - 폐기물 처리: topics/waste-disposal.md
+    - 공사 완료 신고: topics/completion.md
+  - 참조:
+    - 역할 및 책임: reference/roles.md
+    - 위반 제재 규정: reference/violations.md
+    - 용어 정리: reference/glossary.md
