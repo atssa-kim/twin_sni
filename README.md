@@ -28,4 +28,6 @@ mkdocs serve
 mkdocs build -d site
 ```
 
+참고: 문서 콘텐츠는 `docs/` 폴더에 있습니다. `mkdocs.yml`은 루트에 남겨둔 채 `docs_dir: "docs"`로 구성합니다.
+
 참고: 테마를 변경하려면 `mkdocs.yml`의 `theme` 항목을 수정하세요.

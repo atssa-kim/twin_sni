@@ -1,0 +1,94 @@
+/* custom styling for the manual */
+:root {
+  color-scheme: light;
+  --md-default-fg: #333;
+  --md-default-bg: #f6f8fc;
+  --md-primary-fg: #0b3f7f;
+  --md-primary-bg: #e8f0ff;
+  --md-secondary-fg: #005a87;
+  --md-secondary-bg: #e8f6ff;
+}
+
+body {
+  background: #f6f8fc;
+}
+
+.md-main {
+  max-width: 1000px;
+}
+
+.md-content h1,
+.md-content h2,
+.md-content h3 {
+  letter-spacing: -.02em;
+}
+
+.md-content h1 {
+  border-bottom: 3px solid #0b3f7f;
+  padding-bottom: .35em;
+}
+
+.md-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.md-content p,
+.md-content li {
+  line-height: 1.75;
+}
+
+.md-typeset table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  padding: 0.85rem 1rem;
+}
+
+.md-typeset table th {
+  background: #eef4ff;
+  font-weight: 700;
+}
+
+.md-content blockquote {
+  border-left: 0.3rem solid #0b3f7f;
+  background: rgba(224, 232, 255, 0.4);
+  padding: 1rem 1.25rem;
+}
+
+.md-content .admonition {
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.md-content .admonition-title {
+  font-weight: 700;
+}
+
+.md-nav__title {
+  color: #0b3f7f;
+}
+
+.md-nav__link {
+  font-weight: 600;
+}
+
+.md-nav__link--active {
+  color: #0b3f7f;
+}
+
+.md-footer {
+  padding: 2rem 0;
+}
+
+.md-content .checklist {
+  border: 1px solid rgba(15,23,42,0.12);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+}

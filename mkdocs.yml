@@ -1,8 +1,35 @@
 site_name: "건물 공사업자 매뉴얼"
-docs_dir: "." # 현재 폴더를 문서 루트로 사용
+docs_dir: "docs"
 site_author: "건물관리자"
+site_description: "공사업자용 건물 공사 관리 규정 매뉴얼"
+repo_name: "manual"
+repo_url: "https://example.com"
+edit_uri: ""
+
 theme:
-  name: "mkdocs"
+  name: "material"
+  language: "ko"
+  logo: "assets/images/logo.png"
+  font:
+    text: "Noto Sans KR, Apple SD Gothic Neo, sans-serif"
+    code: "JetBrains Mono, monospace"
+  palette:
+    scheme: default
+    primary: indigo
+    accent: teal
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - content.code.annotate
+    - search.highlight
+    - search.share
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - "assets/stylesheets/custom.css"
+
 nav:
   - 홈: index.md
   - 퀵스타트: quickstart.md
