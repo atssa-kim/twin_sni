@@ -92,3 +92,112 @@ body {
   padding: 1rem 1.25rem;
   background: #ffffff;
 }
+
+.home-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.home-card {
+  display: block;
+  padding: 1.3rem;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.05);
+  color: inherit;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  text-decoration: none;
+}
+
+.home-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(11, 63, 127, 0.25);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.12);
+}
+
+.home-card h3 {
+  margin-top: .75rem;
+  margin-bottom: .5rem;
+  color: #0b3f7f;
+}
+
+.home-card p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.home-card__emoji {
+  font-size: 2.1rem;
+}
+
+.flowchart {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+  margin: 1.75rem 0;
+}
+
+.flowchart-step {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 18px;
+  padding: 1.3rem;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+  text-align: center;
+}
+
+.flowchart-step__number {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #0b3f7f;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.flowchart-step h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.flowchart-step p {
+  margin: 0 0 0.75rem;
+  color: #4b5563;
+}
+
+.flowchart-step__link a {
+  color: #0b3f7f;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+.flowchart-step__link a:hover {
+  text-decoration: underline;
+}
+
+.flowchart-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 940px) {
+  .flowchart {
+    grid-template-columns: 1fr;
+  }
+
+  .flowchart-arrow {
+    display: none;
+  }
+}

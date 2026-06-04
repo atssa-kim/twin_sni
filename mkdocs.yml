@@ -9,7 +9,7 @@ edit_uri: ""
 theme:
   name: "material"
   language: "ko"
-  logo: "assets/images/logo.png"
+  logo: "assets/images/logo.svg"
   font:
     text: "Noto Sans KR, Apple SD Gothic Neo, sans-serif"
     code: "JetBrains Mono, monospace"
@@ -21,9 +21,10 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
-    - content.code.annotate
+    - navigation.top
+    - navigation.expand
     - search.highlight
-    - search.share
+    - content.code.annotate
   icon:
     repo: fontawesome/brands/github
 
@@ -31,20 +32,22 @@ extra_css:
   - "assets/stylesheets/custom.css"
 
 nav:
-  - 홈: index.md
-  - 퀵스타트: quickstart.md
-  - 목차:
+  - "🏠 홈": index.md
+  - "⚡ 퀵스타트": quickstart.md
+  - "📝 공사 전":
     - 공사 신청: topics/application.md
     - 출입 절차: topics/access-control.md
     - 주차 규정: topics/parking.md
+  - "🔧 공사 중":
     - 화물승강기 이용: topics/freight-elevator.md
     - 보양 규정: topics/protection-work.md
-    - 안전관리: topics/safety.md
-    - 시설물 이용: topics/facility-usage.md
-    - 원상복구: topics/restoration.md
+    - 안전관리 규정: topics/safety.md
+    - 시설물 이용 방법: topics/facility-usage.md
+  - "✅ 공사 후":
     - 폐기물 처리: topics/waste-disposal.md
+    - 원상복구 기준: topics/restoration.md
     - 공사 완료 신고: topics/completion.md
-  - 참조:
+  - "📚 참조":
     - 역할 및 책임: reference/roles.md
     - 위반 제재 규정: reference/violations.md
     - 용어 정리: reference/glossary.md
